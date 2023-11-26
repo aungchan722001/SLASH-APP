@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="images/Logo.png">
+    <title>FashionGit</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="FashionGif.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-4" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/Logo.png" id="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="About Us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="ContactUs.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body Section -->
+    <section id="productdetail">
+        <div class="single-image">
+            <img src="images/Nike4.png" width="100%" id="Main">
+            <div class="small-group">
+                <div class="small-img-col">
+                    <img src="images/Nike4.png" width="25%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Nike5.png" width="25%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Nike5a.png" width="25%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Nike5b.png" width="25%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="single-details">
+            <h6>Nike/ Shoe</h6>
+            <h4>Brand of Sacrifice Berserk Button Up Hawaiian Shirt</h4>
+            <h5>$160.00</h5>
+            <span>
+                Introducing the Nike Go Flyease, a revolutionary sneaker designed for ultimate convenience and comfort. This innovative slip-on sneaker redefines the concept of ease with its hands-free entry and adaptive fit. The Nike Go Flyease is engineered with a unique tension band that secures the shoe in place while allowing you to effortlessly slip your foot in and out. Elevate your footwear game with the Nike Go Flyease – where innovation meets style for the modern, active lifestyle.
+            </span>
+            <br><br>
+            <p>
+                -Hands-Free Entry: The groundbreaking hands-free entry system makes putting on and taking off your sneakers a breeze. Simply step in, and the tension band secures the fit.
+            </p><p>
+                -Adaptive Fit: The Nike Go Flyease is crafted with a flexible and adaptive design, ensuring a snug and comfortable fit that conforms to the shape of your foot.
+            </p><p>
+                -Versatile Style: Whether you're on the go or taking it easy, the Nike Go Flyease blends style and functionality seamlessly. The sleek design and iconic Nike branding make it a versatile choice for various occasions.
+            </p><p>
+                -Responsive Sole: Experience a cushioned and responsive feel with every step. The shoe's sole is designed for optimal support and comfort throughout your day.
+            </p><p>
+            Upper Material: Breathable mesh
+            </p><p>
+            Closure: Slip-on with tension band
+            </p><p>
+            Sole: Responsive rubber sole
+            </p><p>
+            Color Options: Available in multiple colorways
+            </p>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer mt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2023 @ Fashion Git. All rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="About Us.html">About Us</a></li>
+                <li class="list-inline-item"><a href="ContactUs.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- Add Bootstrap JS and jQuery links here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        var Mainimage=document.getElementById("Main");
+        var smallimage=document.getElementsByClassName("small-img");
+
+        smallimage[0].onclick = function(){
+            Mainimage.src = smallimage[0].src;
+        }
+        smallimage[1].onclick = function(){
+            Mainimage.src = smallimage[1].src;
+        }
+        smallimage[2].onclick = function(){
+            Mainimage.src = smallimage[2].src;
+        }
+        smallimage[3].onclick = function(){
+            Mainimage.src = smallimage[3].src;
+        }
+    </script>
+
+
+</body>
+</html>

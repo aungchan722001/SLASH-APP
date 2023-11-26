@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="images/Logo.png">
+    <title>FashionGit</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="FashionGif.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-4" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/Logo.png" id="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="About Us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="ContactUs.html">Contact Us</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body Section -->
+    <div class="container mt-4">
+        <div id="banner">
+            <img src="images/Banner1.png" id="banner">          
+        </div>
+    </div>
+    <h1 align="center">Featured Products</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <a href="Product.html">
+            <div class="card h-100">
+                <img src="images/FeatProduct1.png" id="first" class="card-img-top smooth-transition" onmouseover="document.getElementById('first').src='images/FeatProduct2.png'" onmouseout="document.getElementById('first').src='images/FeatProduct1.png'">
+                <div class="card-body">
+                    <h5 class="card-title">$45.00</h5>
+                    <p class="card-text">Plain Hoodie</p>
+                </div>
+                <div class="card-footer">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col">
+      <a href="Product1.html">
+        <div class="card h-100">
+            <img src="images/FeatProduct3.png" class="card-img-top" id="second" class="card-img-top smooth-transition" onmouseover="document.getElementById('second').src='images/FeatProduct3.png'"onmouseout="document.getElementById('second').src='images/FeatProduct4.png'">
+            <div class="card-body">
+              <h5 class="card-title">$90.00</h5>
+              <p class="card-text">Nike Air Deldon</p>
+            </div>
+            <div class="card-footer">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+      </a>
+    </div>
+      <div class="col">
+        <a href="Product.html">
+          <div class="card h-100">
+            <img src="images/FeatProduct5.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">$55.00</h5>
+              <p class="card-text">Nike Sweat Pant</p>
+            </div>
+            <div class="card-footer">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+        <div class="col">
+          <a href="Product.html">
+          <div class="card h-100 ">
+            <img src="images/FeatProduct6.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">$50.00</h5>
+              <p class="card-text">Nike T-Shirt</p>
+            </div>
+            <div class="card-footer">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="col">
+          <a href="Product1.html">
+          <div class="card h-100">
+            <img src="images/FeatProduct7.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">$120.00</h5>
+              <p class="card-text">Nike Air Jordan</p>
+            </div>
+            <div class="card-footer">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="col">
+          <a href="Product.html">
+          <div class="card h-100">
+            <img src="images/FeatProduct8.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">$65.00</h5>
+              <p class="card-text">Nike Air Pant</p>
+            </div>
+            <div class="card-footer">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+      <section id="clickAction">
+        <h4>Use Discount Coupon</h4>
+        <h1>Get Discoutns Up To 50% Off</h1>
+      </section>
+    <!-- Footer Section -->
+    <footer class="footer mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2023 @ Fashion Git. All rights Reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="About Us.html">About Us</a></li>
+              <li class="list-inline-item"><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

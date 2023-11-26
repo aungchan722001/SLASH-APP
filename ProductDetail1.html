@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/png" href="images/Logo.png">
+    <title>FashionGif</title>
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="FashionGif.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/Logo.png" id="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Product.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="About Us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark" href="ContactUs.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body Section -->
+    <section id="productdetail">
+        <div class="single-image">
+            <img src="images/Product3.png" width="100%" id="Main">
+            <div class="small-group">
+                <div class="small-img-col">
+                    <img src="images/Product3.png" width="25%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Product1a.png" width="25%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Product1b.png" width="25%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/Product4.png" width="25%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="single-details">
+            <h6>Nike / Jersey</h6>
+            <h4>Nike Lakers Jersey</h4>
+            <h5>$74.00</h5>
+            <span>
+                Show your team pride with the Nike Los Angeles Lakers Authentic Jersey. Designed for comfort and style, this jersey is perfect for passionate Lakers fans who want to represent their favorite team on and off the court. Whether you're cheering from the stands or shooting hoops with friends, the Nike Lakers Jersey delivers an authentic look and feel.
+
+                
+            </span>
+
+            <br><br>
+            <p>
+                -Official Team Design: The jersey features the iconic Los Angeles Lakers design, complete with team colors and logos, showcasing your allegiance to one of the most storied franchises in NBA history.
+            </p><p>
+                -Premium Quality: Constructed with high-quality materials, the Nike Lakers Jersey offers a comfortable fit and durability, making it suitable for everyday wear or intense game-day action.
+            </p><p>
+                -Dri-FIT Technology: Stay cool and dry with Nike's Dri-FIT technology, which wicks away sweat, keeping you comfortable during the most intense moments of the game.
+            </p><p>
+                -Customizable Options: Personalize your jersey with your favorite player's name and number or add your own customizations to make it uniquely yours.
+            </p><p>
+                Material: 100% Polyester
+            </p><p>
+                Fit: Authentic – as worn by the players on the court
+            </p><p>
+                Technology: Dri-FIT moisture-wicking
+            </p><p>
+                Team: Los Angeles Lakers
+            </p>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer mt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2023 @ Fashion Git. All rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="About Us.html">About Us</a></li>
+                <li class="list-inline-item"><a href="ContactUs.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- Add Bootstrap JS and jQuery links here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+       var Mainimage=document.getElementById("Main");
+        var smallimage=document.getElementsByClassName("small-img");
+
+        smallimage[0].onclick = function(){
+            Mainimage.src = smallimage[0].src;
+        }
+        smallimage[1].onclick = function(){
+            Mainimage.src = smallimage[1].src;
+        }
+        smallimage[2].onclick = function(){
+            Mainimage.src = smallimage[2].src;
+        }
+        smallimage[3].onclick = function(){
+            Mainimage.src = smallimage[3].src;
+        }
+    </script>
+
+
+</body>
+</html>
